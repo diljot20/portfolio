@@ -1,0 +1,108 @@
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-description {
+    max-width: 650px;
+}
+
+.about-text {
+    line-height: 1.8;
+}
+
+.about-card {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.project-card .card-title {
+    margin-bottom: 15px;
+}
+
+.project-card .card-text {
+    line-height: 1.6;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .text-muted {
+    color: #aaa !important;
+}
+
+body.dark-mode .bg-light {
+    background-color: #1c1c1c !important;
+}
+
+body.dark-mode .about-card {
+    background-color: #1c1c1c;
+    border-color: #444;
+}
+
+body.dark-mode .card {
+    background-color: #1c1c1c;
+    color: white;
+    border-color: #444;
+}
+
+body.dark-mode .card .text-muted {
+    color: #aaa !important;
+}
+
+body.dark-mode .btn-outline-dark {
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode .btn-outline-dark:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
